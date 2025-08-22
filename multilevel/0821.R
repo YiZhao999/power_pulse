@@ -35,9 +35,8 @@ dat <- raw %>%
   mutate(satisf_cwc = econ_weighted - mean(econ_weighted, na.rm = TRUE)) %>%
   ungroup() %>%
   mutate(
-    # Party affiliation as a single indicator per math model (APC vs. non-APC)
     party_affil_apc = as.numeric(is_apc),  # 1 = APC, 0 = non-APC
-    is_pdp          = as.numeric(is_pdp),  # kept if you want to run a PDP version later
+    is_pdp          = as.numeric(is_pdp),  
     post_2015       = as.numeric(post_2015)
   )
 
@@ -74,9 +73,6 @@ dat <- dat %>%
   left_join(country_aid_df %>% select(year, log_CHN_country, log_US_country),
             by = "year")
 
-# =============================
-# Helper: keep complete cases for each model
-# =============================
 make_model_df <- function(dat, vars) {
   out <- dat %>% select(all_of(vars)) %>% drop_na()
   n_total <- nrow(dat); n_used <- nrow(out)
