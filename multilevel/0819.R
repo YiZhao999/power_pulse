@@ -36,7 +36,7 @@ agg_party_df <- dat %>%
     share_pdp = mean(is_pdp, na.rm = TRUE),
     .groups = "drop"
   ) %>%
-  mutate(agg_party = share_apc)  # you can choose share_apc or share_apc - share_pdp
+  mutate(agg_party = share_apc)  
 
 # Join back to individual-level data
 dat <- dat %>%
