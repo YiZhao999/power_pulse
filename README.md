@@ -31,8 +31,4 @@ The first version focuses on combining **public opinion data** from **Nigeria** 
     - Public opinion data  
     - Foreign aid allocations to each region  
 
----
 
-## Purpose  
-
-This repository builds the foundation for analyzing how public opinion interacts with foreign aid flows, providing insights into the dynamics of great power influence in Africa.  
