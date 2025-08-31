@@ -1,7 +1,6 @@
-setwd("~/Desktop/test")  # Change this to your actual path
+setwd("~/Desktop/test")  
 library(readr)
 test <- read_csv("test_nigeria.csv")
-# Check the structure of the data
 str(test)
 
 library(lme4)
