@@ -158,17 +158,12 @@ did_dat %>%
   count(first_treat)
 
 
-
-# or a nicer ggplot:
-# ggdid(agg_dynamic)
-
 # === Export tidy tables ===
 msummary(
   list("Overall ATT (CHN → Fav. China)" = agg_overall),
   output = "markdown"
 )
 
-# If you also want US commitments → favorability toward US:
 did_dat <- did_dat %>% mutate(treat_ry_us = as.integer(USA_comm > 0),
                               first_treat_us = ifelse(
                                 ave(treat_ry_us, region_id, FUN = function(x) any(x==1)) == 1,
