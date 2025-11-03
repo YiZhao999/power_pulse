@@ -31,8 +31,8 @@ The first version focuses on combining **public opinion data** from **Nigeria** 
     - Public opinion data  
     - Foreign aid allocations to each region
 
-- **Files with `1030`**  
-  - Identify causal relations under multilevel model:
+- **Files with `1030` and `1103`**  
+  - Identify causal relations under a multilevel model:
     - Staggered DID
     - Continuous DID   
 
