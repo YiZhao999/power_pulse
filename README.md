@@ -2,7 +2,7 @@
 
 **Power Pulse** is a project designed to track great power transition through **economic statecraft**.  
 
-The first version focuses on combining **public opinion data** from **Nigeria** and **Kenya** toward their major donor countries. The repository contains 43 Python scripts, each contributing to the construction, processing, and integration of datasets. It also has multilevel tests in R code as well as some visualization results (in PNG or HTML format). 
+The first version focuses on combining **public opinion data** from **Nigeria** and **Kenya** toward their major donor countries. The repository contains Python scripts (keep updating), each contributing to the construction, processing, and integration of datasets. It also has multilevel tests in R code as well as some visualization results (in PNG or HTML format). 
 
 ---
 
